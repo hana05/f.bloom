@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>f.bloom</title>
+	
+<link href="css/html5reset-1.6.1.css" rel="stylesheet">	
+<link href="css/slick-theme.css" rel="stylesheet">
+<link href="css/slick.css" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">	
+<link href="css/stylesheet.css" rel="stylesheet">
+<link rel="icon" href="img/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon.png">
+<!--スライダー-->
+<script src="js/jquery-3.4.1.min.js"></script>	
+<script src="js/slick.min.js"></script>	
+</head>
+
+<body>
+	<div id="wrapper">
+	<header>
+		<div class="header_wrapper">
+			<div class="header">
+				<div class="logo">
+				<h1><img src="img/logo.png" width="150px" height="182px" alt="logo"></h1>
+				</div>	
+				<nav class="g_nav">
+				<ul class="clearfix">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="aboutas.html">About us</a></li>
+					<li><a href="preservedflower.html">Preserved flower</a></li>
+					<li><a href="onlineshop.html">Online shop</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="access.html">Access</a></li>
+				</ul>
+				</nav>
+				</div><!--header class終わり-->
+			</div>
+		</header>
+	<main>
+		<div class="inquiry_wrapper">
+			<div class="inquery_title_wrapper">
+		 		 <div class="inquery_title_inner">
+			 		 <div class="inquiry_title">
+						<h2 class="h2_title">お問い合わせフォーム</h2>
+					 </div>	
+					  <div class="contact_text">
+					   <p>お気軽にお問い合せください。</p>
+					   <p>＊は必須項目です</p>
+					</div>   
+		 		 </div>	  
+			</div>
+	<!--コンタクトフォーム-->
+		 
+
+	<form id="contact">
+    <fieldset>
+     <legend>お客様情報</legend>
+     <p>
+      <label><span class="itemName"><sup>＊</sup>お名前：</span>
+      <input type="text" name="name" size="50" maxlength="50" required></label>
+      </p>
+      <p>
+      <label><span class="itemName"><sup>＊</sup>メールアドレス：</span>
+        <input type="email" name="email" size="50" maxlength="50" placeholder="aaa@bbbbb.com" required></label>
+      </p>
+      <p>
+      <label><span class="itemName"><sup>＊</sup>お電話番号：</span>
+        <input type="tel" name="telNumber" size="20" maxlength="17" placeholder="00-0000-0000" required></label>
+      </p>
+	　<p>
+      <label><span class="itemName">お問い合わせ内容 :<br></span>
+        <textarea name="message" cols="100" rows="5" wrap="hard" placeholder="ご自由にお書きください"></textarea>
+      </label>
+      </p>
+    </fieldset>
+	</form>	
+			
+	<p class="submit_btn">
+    <input type="submit" value="送信する" form="contact">	
+  	</p>
+	</div>	
+		<div>
+	
+	<!--コンタクトフォーム-->				 
+	</div><!--inquiry_wrapper-->
+	</main>
+	<footer>
+		<div class="footer">
+			<div class="footer_wrapper">
+			<nav class="sub_nav">
+				<ul class="clearfix">
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="guid.html">Gide</a></li>
+					<li><a href="privacy.html">Privacy</a></li>
+				</ul>
+			</nav>	
+			<p><img src="img/footer_logo.png" height="136" width="100" alt="footerlogo"></p>
+			<div class="sns">
+				<p class="fb"><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></p>
+				<p class="twitter"><a href="#"><i class="fab fa-twitter-square fa-2x"></i></a></p>
+				<p class="instagram"><a href="#"><i class="fab fa-instagram fa-2x"></i></a></p>
+			</div>	
+			</div>
+			
+		</div>	
+		<div class="copyright">
+			<p>&copy; 2020 f.bloom</p>
+		</div>	
+		<div id="top_btn_wrapper">
+			<p class="top_btn"><a href="#">topへ</a></p>	
+		</div>	
+	</footer>	
+	</div>	
+</body>
+		<script type="text/javascript">
+  $(function() {
+    var topBtn = $('#top_btn_wrapper');    
+    topBtn.hide();
+    $(window).scroll
+      (function () {
+        if ($(this).scrollTop() > 100) {
+          topBtn.fadeIn();
+        }
+      else {
+        topBtn.fadeOut();
+      }
+    });
+  });
+</script>
+	<script type="text/javascript">
+  $(function () {
+    $('a[href^="#"]').on('click', function () {
+      var speed = 500;
+      var href = $(this).attr('href');
+      var target = $(href == '#' || href == '' ? 'html' : href);
+      var position = target.offset().top;
+      $('body,html').animate({scrollTop: position}, speed, 'swing');
+      return false;
+    });
+  });
+</script>
+</html>
