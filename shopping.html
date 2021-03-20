@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>f.bloom</title>
+	
+<link href="css/html5reset-1.6.1.css" rel="stylesheet">	
+<link href="css/slick-theme.css" rel="stylesheet">
+<link href="css/slick.css" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">	
+<link href="css/stylesheet.css" rel="stylesheet">
+<link rel="icon" href="img/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon.png">	
+<!--スライダー-->
+<script src="js/jquery-3.4.1.min.js"></script>	
+<script src="js/slick.min.js"></script>
+</head>
+
+<body id="shopping">
+	<div id="wrapper">
+		<header>
+			<div class="header_wrapper">
+			<div class="header">
+				<div class="logo">
+				<h1><img src="img/logo.png" width="150px" height="182px" alt="logo"></h1>
+				</div>	
+				<nav class="g_nav">
+				<ul class="clearfix">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="aboutas.html">About us</a></li>
+					<li><a href="preservedflower.html">Preserved flower</a></li>
+					<li><a href="onlineshop.html">Online shop</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="access.html">Access</a></li>
+				</ul>
+				</nav>
+				</div><!--header class終わり-->
+				</div>
+		</header>
+		<main>
+			<div class="shopping_title_wrapper">
+				<div class="shoping_title_inner">
+					<div class="shopping_title">
+						<h2 class="h2_title">商品詳細</h2>
+					</div>
+				</div>
+			</div>
+			<section class="shopping">
+				<div class="shopping_wrapper">
+					<div class="shopping_inner">
+						<div class="shopping_img">
+							<ul class="slider thumb-item">
+							<li><img src="img/sp_400x400_01.jpg" alt=""></li>
+							<li><img src="img/sp_400x400_02.jpg" alt=""></li>
+							<li><img src="img/sp_400x400_03.jpg" alt=""></li>
+							<li><img src="img/sp_400x400_04.jpg" alt=""></li>
+							<!--<li><a href="#"><img src="img/os_400x400.jpg" alt=""></a></li>-->
+							</ul>
+
+							<ul class="slider thumb-item-nav">
+							<li><img src="img/sp_400x400_01.jpg" width="80" height="80" alt=""></li>
+							<li><img src="img/sp_400x400_02.jpg" width="80" height="80" alt=""></li>
+							<li><img src="img/sp_400x400_03.jpg" width="80" height="80" alt=""></li>
+							<li><img src="img/sp_400x400_04.jpg" width="80" height="80" alt=""></li>
+							<!--<li><img src="img/os_400x400.jpg" width="80" height="80" alt=""></li>-->
+							</ul>
+						</div>
+						<div class="shopping_text">
+							<h3>ラウンドブーケ</h3>
+							<p class="description">ビタミンカラーの花を束ねました。<br>
+								                   見ているだけで元気を貰えるような、明るく元気な印象の花束です。<br>
+								                   ウェディングブーケとしても人気です。</p>
+							<p class="price">販売価格　20,000円</p>
+							<div class="number_wrapper">
+							<span class="number">数量</span>
+							<input type="number" name="product_num" value="1" min="1" max="10">	
+							</div>
+							<div class="cartin">
+								<span class="cartin_inner">
+									<button class="cartin_btn" type="submit">
+										<p>購入する</p>
+									</button>	
+								</span>	
+							</div>	
+						</div>	
+					</div>	
+				</div>	
+			</section>
+		</main>
+		<footer>
+		<div class="footer">
+			<div class="footer_wrapper">
+			<nav class="sub_nav">
+				<ul class="clearfix">
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="guid.html">Gide</a></li>
+					<li><a href="privacy.html">Privacy</a></li>
+				</ul>
+			</nav>	
+			<p class="logo_img"><img src="img/footer_logo.png" height="136" width="100" alt="footerlogo"></p>
+			<div class="sns">
+				<p class="fb"><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></p>
+				<p class="twitter"><a href="#"><i class="fab fa-twitter-square fa-2x"></i></a></p>
+				<p class="instagram"><a href="#"><i class="fab fa-instagram fa-2x"></i></a></p>
+			</div>	
+			</div>
+		</div>
+			<div class="copyright">
+			<p>&copy; 2020 f.bloom</p>
+		</div>	
+		<div id="top_btn_wrapper">
+			<p class="top_btn"><a href="#">topへ</a></p>	
+		</div>	
+	　</footer>	
+	</div>	
+</body>
+<script>
+//$(function() {
+//$('.thumb-item').slick({
+//infinite: true,
+////slidesToShow: 1,
+////slidesToScroll: 1,
+//arrows: true,
+//fade: true,
+//dots:true,
+//asNavFor: '.thumb-item-nav'
+//});
+//$('.thumb-item-nav').slick({
+//autoplay: true,
+//autoplaySpeed: 4000,
+//speed: 400,
+//arrows: true,
+//infinite: true,
+//slidesToShow: 5,
+//slidesToScroll: 1,
+//asNavFor: '.thumb-item',
+//focusOnSelect: true
+//});
+//});
+$('.thumb-item').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.thumb-item-nav'
+});
+$('.thumb-item-nav').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.thumb-item',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true
+});
+</script>
+	
+	<script type="text/javascript">
+  $(function() {
+    var topBtn = $('#top_btn_wrapper');    
+    topBtn.hide();
+    $(window).scroll
+      (function () {
+        if ($(this).scrollTop() > 100) {
+          topBtn.fadeIn();
+        }
+      else {
+        topBtn.fadeOut();
+      }
+    });
+  });
+</script>
+	<script type="text/javascript">
+  $(function () {
+    $('a[href^="#"]').on('click', function () {
+      var speed = 500;
+      var href = $(this).attr('href');
+      var target = $(href == '#' || href == '' ? 'html' : href);
+      var position = target.offset().top;
+      $('body,html').animate({scrollTop: position}, speed, 'swing');
+      return false;
+    });
+  });
+</script>
+</html>
